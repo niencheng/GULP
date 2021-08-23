@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -15,7 +15,12 @@
     <p>這裡是給你寫layout page的地方，通常是header跟footer，當然你也可以自己調整</p>
   </header>
 
-  <%- contents %>
+  
+<div>
+  <p>這裡是寫在layout.ejs裡，<%- contents %>的部分</p>
+  <p style="display: inline;">最上方title裡面的<p style="display: inline; color: red;">首頁</p>就是在layout.ejs裡<%- title %>的部分</p>
+  <p>之後要再加網頁就複製一個此網頁再改名就行了</p>
+</div>
 
   <footer>
 
